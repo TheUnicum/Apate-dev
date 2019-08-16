@@ -1,7 +1,7 @@
 #include "Log.h"
-//#include "spdlog/sinks/stdout_color_sinks.h"
+#include "spdlog/sinks/stdout_color_sinks.h"
 
-/*
+
 namespace Apate {
 
 	std::shared_ptr<spdlog::logger> Log::s_CoreLogger;
@@ -14,9 +14,8 @@ namespace Apate {
 		s_CoreLogger = spdlog::stdout_color_mt("APATE");
 		s_CoreLogger->set_level(level);
 
-		s_ClientLogger = spdlog::stdout_color_mt("APP++");
+		s_ClientLogger = spdlog::stdout_color_mt("APP +");
 		s_ClientLogger->set_level(level);
 	}
 
 }
-*/
