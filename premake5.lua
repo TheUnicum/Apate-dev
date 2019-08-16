@@ -23,11 +23,9 @@ project "Apate"
 
     files
     {
-        "%{prj.name}/**.h",
-        "%{prj.name}/**.cpp",
-        "%{prj.name}/**.c",
-
-        "%{prj.name}/**.hpp",
+        "%{prj.name}/src/**.h",
+        "%{prj.name}/src/**.cpp",
+        "%{prj.name}/src/**.c",
     }
 
     includedirs
@@ -73,8 +71,8 @@ project "Sandbox"
 
     files
     {
-        "%{prj.name}/**.h",
-        "%{prj.name}/**.cpp",S
+        "%{prj.name}/src/**.h",
+        "%{prj.name}/src/**.cpp",
     }
 
     includedirs
@@ -82,7 +80,6 @@ project "Sandbox"
         "Apate/vendor/spdlog/include",
         "Apate/src",
         "Apate/vendor",
-        "%{prj.name}/src",
     }
 
     links
