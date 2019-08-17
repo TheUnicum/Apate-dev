@@ -6,6 +6,7 @@
 
 // -----Application-------------------
 #include "Apate/Core/Application.h"
+#include "Apate/Core/Layer.h"
 #include "Apate/Core/Log.h"
 // -----------------------------------
 
