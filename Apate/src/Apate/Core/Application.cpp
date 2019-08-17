@@ -2,7 +2,7 @@
 #include "Application.h"
 
 // Temporary
-#include <GLFW/glfw3.h>
+#include <glad/glad.h>
 
 namespace Apate {
 
