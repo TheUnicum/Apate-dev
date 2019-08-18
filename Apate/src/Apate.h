@@ -8,8 +8,15 @@
 #include "Apate/Core/Application.h"
 #include "Apate/Core/Layer.h"
 #include "Apate/Core/Log.h"
-#include "Apate/ImGui/ImGuiLayer.h"
 // -----------------------------------
+
+// -----Input-------------------------
+#include "Apate/Core/Input.h"
+#include "Apate/Core/KeyCodes.h"
+#include "Apate/Core/MouseButtonCodes.h"
+// -----------------------------------
+
+#include "Apate/ImGui/ImGuiLayer.h"
 
 // ---Entry Point---------------------
 #include "Apate/EntryPoint.h"
