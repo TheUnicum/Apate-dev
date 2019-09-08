@@ -1,6 +1,8 @@
 #include "APpch.h"
 #include "Application.h"
 
+#include "Apate/Renderer/Renderer.h"
+
 // Temporary
 #include <glad/glad.h>
 
@@ -57,8 +59,10 @@ namespace Apate {
 		while (m_Running)
 		{
 			// Temporary
-			glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
-			glClear(GL_COLOR_BUFFER_BIT);
+			//glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+			//glClear(GL_COLOR_BUFFER_BIT);
+			RenderCommand::SetClearColor(glm::vec4(0.1f, 0.1f, 0.1f, 1.0f));
+			RenderCommand::Clear();
 
 			for (Layer* layer : m_LayerStack)
 				layer->OnUpdate();
