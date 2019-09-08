@@ -69,7 +69,11 @@ namespace Apate {
 
 			m_ImGuiLayer->Begin();
 			for (Layer* layer : m_LayerStack)
-				layer->OnImGuiRender();
+			{
+				AP_RENDER(layer, { layer->OnImGuiRender(); }); //layer->OnImGuiRender();
+			}
+			Renderer::Get().WaitAndRender();
+
 			m_ImGuiLayer->End();
 
 			m_Window->OnUpdate();
